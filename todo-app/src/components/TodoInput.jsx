@@ -3,7 +3,7 @@ import { useState } from "react"
 export function TodoInput(props){
     const { handleAddTodo }= props
     const [inputValue, setInputValue] = useState('')
-// console.log(inputValue)
+ console.log(inputValue)
     return(
         <div>
             <input value={inputValue} onChange={(e)=>{setInputValue(e.target.value)}} placeholder="Add task"></input>
